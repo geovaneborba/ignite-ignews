@@ -6,22 +6,41 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "stripe:listen": "stripe listen --forward-to localhost:3000/api/webhooks/checkout",
+    "slicemachine": "start-slicemachine"
   },
   "dependencies": {
+    "@prismicio/client": "^7.3.1",
+    "@prismicio/next": "^1.3.6",
+    "@prismicio/react": "^2.7.3",
+    "@slicemachine/init": "^2.7.2",
+    "@stripe/stripe-js": "^2.1.7",
+    "mongodb": "^6.1.0",
+    "next": "latest",
+    "next-auth": "^4.23.2",
+    "prismic-dom": "^2.2.7",
     "react": "latest",
     "react-dom": "latest",
-    "next": "latest"
+    "react-icons": "^4.11.0",
+    "stripe": "^13.8.0",
+    "tailwind-merge": "^1.14.0"
   },
   "devDependencies": {
-    "typescript": "latest",
-    "@types/react": "latest",
+    "@slicemachine/adapter-next": "^0.3.21",
     "@types/node": "latest",
+    "@types/prismic-dom": "^2.1.2",
+    "@types/react": "latest",
     "@types/react-dom": "latest",
     "autoprefixer": "latest",
-    "postcss": "latest",
-    "tailwindcss": "latest",
     "eslint": "latest",
-    "eslint-config-next": "latest"
+    "eslint-config-next": "latest",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-plugin-prettier": "^5.0.0",
+    "postcss": "latest",
+    "prettier": "^3.0.3",
+    "slice-machine-ui": "^1.18.0",
+    "tailwindcss": "latest",
+    "typescript": "latest"
   }
 }
