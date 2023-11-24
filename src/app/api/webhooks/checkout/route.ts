@@ -1,4 +1,4 @@
-import stripe from "@/services/stripe";
+import stripe from "@/lib/stripe";
 import {
   saveSubscription,
   updateSubscription,

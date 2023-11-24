@@ -4,7 +4,7 @@ import Image from "next/image";
 
 import girlCodingAvatar from "@/assets/images/avatar.svg";
 import { SubscribeButton } from "@/components/SubscribeButton";
-import stripe from "@/services/stripe";
+import stripe from "@/lib/stripe";
 import { priceFormatter } from "@/utils/priceFormatter";
 
 export const metadata: Metadata = {

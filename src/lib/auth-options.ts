@@ -1,6 +1,6 @@
 import { NextAuthOptions } from "next-auth";
 import GithubProvider from "next-auth/providers/github";
-import { db } from "@/services/mongodb";
+import { db } from "@/lib/mongodb";
 
 export const authOptions: NextAuthOptions = {
   providers: [

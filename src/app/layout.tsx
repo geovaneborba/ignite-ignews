@@ -1,5 +1,5 @@
 import { Provider } from "@/components/Provider";
-import { repositoryName } from "@/services/prismicio";
+import { repositoryName } from "@/lib/prismicio";
 import "@/styles/globals.css";
 import { PrismicPreview } from "@prismicio/next";
 import type { Metadata } from "next";

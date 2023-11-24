@@ -1,7 +1,7 @@
-import stripe from "@/services/stripe";
+import stripe from "@/lib/stripe";
 import { NextResponse } from "next/server";
 import Stripe from "stripe";
-import { db } from "@/services/mongodb";
+import { db } from "@/lib/mongodb";
 
 export async function POST(request: Request) {
   const email = await request.json();

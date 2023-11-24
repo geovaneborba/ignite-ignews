@@ -1,5 +1,5 @@
-import { db } from "@/services/mongodb";
-import stripe from "@/services/stripe";
+import { db } from "@/lib/mongodb";
+import stripe from "@/lib/stripe";
 
 export async function saveSubscription(
   subscriptionId: string,
